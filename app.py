@@ -97,8 +97,11 @@ with tabs[2]:
     with col5:
         st.markdown("""<ul> 
             <h3>Project Development Details</h3>
-            <h4>Developer</h4>
-            <li>Rahul Palivela</li>
+            <h4>Developers</h4>
+            <li>Rahul </li>
+            <li>Sai ravi teja </li>
+            <li>Uma sri</li>
+            <li>Harika</li>
         </ul>
         <br>""", unsafe_allow_html=True)
     with col6:
