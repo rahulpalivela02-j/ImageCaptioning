@@ -98,10 +98,12 @@ with tabs[2]:
         st.markdown("""<ul> 
             <h3>Project Development Details</h3>
             <h4>Developers</h4>
-            <li>Rahul </li>
-            <li>Sai ravi teja </li>
-            <li>Uma sri</li>
-            <li>Harika</li>
+            <li>P.Rahul </li>
+            <li>N.Sai ravi teja </li>
+            <li>R.Uma sri</li>
+            <li>K.Harika</li>
+            <h4>Mentor</h4>
+            <li>P.Chandrakala</li>
         </ul>
         <br>""", unsafe_allow_html=True)
     with col6:
