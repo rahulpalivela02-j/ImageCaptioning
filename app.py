@@ -31,7 +31,7 @@ def generate(uploaded_image, prompt):
                 ],
             }
         ],
-        model='qwen/qwen3.6-27b',
+        model='llama-3.3-70b-versatile',
     )
     return chat_completion.choices[0].message.content
 
@@ -85,7 +85,7 @@ with tabs[1]:
                     if prompt:
                         output = generate(uploaded_file, prompt)
                     else:
-                        output = generate(uploaded_file, 'Give me a paragraph of What"s in this picture? Don"t show text in between think tag (<think></think>)')
+                        output = generate(uploaded_file, 'Give me a paragraph of What"s in this picture?')
                 st.subheader('Result:')
                 st.write(output)
 with tabs[2]:
