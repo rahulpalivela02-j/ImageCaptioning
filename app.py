@@ -32,6 +32,7 @@ def generate(uploaded_image, prompt):
             }
         ],
         model='qwen/qwen3.6-27b',
+        reasoning_effort='none',
     )
     return chat_completion.choices[0].message.content
 
