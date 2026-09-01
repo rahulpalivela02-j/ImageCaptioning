@@ -31,7 +31,7 @@ def generate(uploaded_image, prompt):
                 ],
             }
         ],
-        model='meta-llama/llama-4-scout-17b-16e-instruct',
+        model='Llama-4-Scout-17B-16E-Instruct',
     )
     return chat_completion.choices[0].message.content
 
