@@ -85,7 +85,7 @@ with tabs[1]:
                     if prompt:
                         output = generate(uploaded_file, prompt)
                     else:
-                        output = generate(uploaded_file, 'Give me a summary of what"s in the picture?')
+                        output = generate(uploaded_file, 'Summarize the handwritten text in this image. You must write the response as a single, continuous paragraph under 4 sentences. Do not use bullet points, numbered lists, markdown headers, or bold text. Provide only the direct summary.')
                 st.subheader('Result:')
                 st.write(output)
 with tabs[2]:
