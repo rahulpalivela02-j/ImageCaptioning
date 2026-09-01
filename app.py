@@ -31,7 +31,7 @@ def generate(uploaded_image, prompt):
                 ],
             }
         ],
-        model='openai/gpt-oss-120b',
+        model='qwen/qwen3.6-27b',
     )
     return chat_completion.choices[0].message.content
 
