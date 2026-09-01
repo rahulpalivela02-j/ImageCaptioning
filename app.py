@@ -31,7 +31,7 @@ def generate(uploaded_image, prompt):
                 ],
             }
         ],
-        model='qwen/qwen3.6-27b',
+        model='',
     )
     return chat_completion.choices[0].message.content
 
@@ -85,7 +85,7 @@ with tabs[1]:
                     if prompt:
                         output = generate(uploaded_file, prompt)
                     else:
-                        output = generate(uploaded_file, 'Give me a paragraph of What"s in this picture?')
+                        output = generate(uploaded_file, "Don't elaborate. Give me summary of what's in the picture. ")
                 st.subheader('Result:')
                 st.write(output)
 with tabs[2]:
