@@ -85,7 +85,7 @@ with tabs[1]:
                     if prompt:
                         output = generate(uploaded_file, prompt)
                     else:
-                        output = generate(uploaded_file, "Don't elaborate. Give me summary of what's in the picture. ")
+                        output = generate(uploaded_file, 'Give me a summary of what"s in the picture?')
                 st.subheader('Result:')
                 st.write(output)
 with tabs[2]:
