@@ -85,7 +85,7 @@ with tabs[1]:
                     if prompt:
                         output = generate(uploaded_file, prompt)
                     else:
-                        output = generate(uploaded_file, 'Give me a paragraph of What"s in this picture?')
+                        output = generate(uploaded_file, 'Give me a paragraph of What"s in this picture? Don"t show text in between think tag (<think></think>)')
                 st.subheader('Result:')
                 st.write(output)
 with tabs[2]:
